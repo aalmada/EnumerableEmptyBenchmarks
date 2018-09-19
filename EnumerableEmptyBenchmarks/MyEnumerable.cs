@@ -57,10 +57,7 @@ namespace EnumerableEmptyBenchmarks
             public static EmptyEnumerableClass<T> Instance => 
                 instance;
 
-            public EmptyEnumerableClass<T> GetEnumerator() => 
-                this;
-            
-            IEnumerator<T> IEnumerable<T>.GetEnumerator() => 
+            public IEnumerator<T> GetEnumerator() => 
                 this;
             
             IEnumerator IEnumerable.GetEnumerator() => 
